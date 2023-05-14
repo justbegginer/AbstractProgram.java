@@ -1,0 +1,15 @@
+apple|яблоко
+sum|сумма
+point|точка
+free|бесплатный
+divide|разделить
+tipping|опрокидывающийся
+price|цена
+sunny|солнечный
+rain|дождь
+yellow|желтый
+green|зеленый
+iron|железо
+assas
+free|свободный
+tipping point|поворотный момент
