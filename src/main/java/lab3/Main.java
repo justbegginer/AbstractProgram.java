@@ -13,14 +13,16 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class Main {
     public static void main(String[] args) {
-        test2();
+        for (int i = 0; i < test2().size(); i++) {
+            System.out.println(test2().get(i));
+        }
     }
 
 
-    static public   void segregate(Collection<? extends Chordate> src,
-                                                              Collection<? super CommonHedgehog> collection1,
-                                                              Collection<? super Manul> collection2,
-                                                              Collection<? super Lynx> collection3) {
+    static public void segregate(Collection<? extends Chordate> src,
+                                 Collection<? super CommonHedgehog> collection1,
+                                 Collection<? super Manul> collection2,
+                                 Collection<? super Lynx> collection3) {
         for (Chordate animal : src) {
             if (animal instanceof CommonHedgehog) {
                 collection1.add((CommonHedgehog) animal);
@@ -55,8 +57,7 @@ public class Main {
         Collection<Predatory> test1 = Arrays.asList(
                 new Lynx(),
                 new Manul(),
-                new Manul(),
-                new Cats()
+                new Manul()
         );
 
         Collection<Chordate> animals1 = new ArrayList<>();
@@ -130,7 +131,8 @@ public class Main {
         labFrame.setVisible(true);
 
     }
-    private static void textSetter(List<JTextField> textPlace, List<String> text){
+
+    private static void textSetter(List<JTextField> textPlace, List<String> text) {
         textPlace.get(0).setText(text.get(0));
         textPlace.get(1).setText(text.get(1));
         textPlace.get(2).setText(text.get(2));

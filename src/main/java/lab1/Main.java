@@ -24,7 +24,7 @@ public class Main {
             double y = in.nextDouble();
             System.out.println("Enter z coordinate of moving:");
             double z = in.nextDouble();
-            newHero.move(new Point(x, y, z));
+            System.out.println(newHero.move(new Point(x, y, z)));
             System.out.println("do you wanna continue?y/n");
         }while (in.next().equals("y"));
         //System.out.println(newHero.getPosition().getCoordinatesMessage());

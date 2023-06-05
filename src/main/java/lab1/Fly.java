@@ -6,7 +6,7 @@ public class Fly implements Move {
     public String move(Point a, Point b) {
         if (a.getZ() - b.getZ() > 0) {
             return errorMessage(2);
-        } else if (a.getZ() - b.getZ() < 50) {
+        } else if (a.getZ() - b.getZ() > 50) {
             return errorMessage(1);
         } else {
             if (Point.getDistance(a, b) > 75) {
